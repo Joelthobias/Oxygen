@@ -262,7 +262,7 @@ a {
         color: #28a7e9;
     }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-	color: #000;
+	color: #28a7e9;
 	background-color: #e7e7e7;
 }
 .navbar-default .navbar-toggle
@@ -337,10 +337,10 @@ padding-top: 20em;
         padding-top: 80px;
         padding-bottom: 80px;
     }
-#feature p
-    {
-        padding-top: 10px;
-    }
+#feature p {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 #feature span
     {
         float: left;
@@ -541,9 +541,7 @@ footer
     .pricing {
         margin-bottom: 20px;
     }
-    #feature img, #download img {
-        margin-top: 30px;
-    }
+
     #feature1 img {
         margin-bottom: 30px;
     }
