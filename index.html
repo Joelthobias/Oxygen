@@ -17,7 +17,9 @@
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<!-- google font -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'>
-
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 		<!-- custom css -->
 		<link rel="stylesheet" href="css/templatemo-style.css">
 
@@ -144,7 +146,9 @@
 <form>
     <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G50UDHySrT15UP"></script>
 </form>
-
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCentertwo">
+ Pay with Google Pay
+</button>
 							
 						</div>
 					</div>
@@ -167,7 +171,9 @@
 <form>
     <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G50j3ljqnFPpkT"></script>
 </form>
-
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterthree">
+ Pay with Google Pay
+</button>
 						</div>
 					</div>
 										<div class="col-md-4 wow fadeIn" data-wow-delay="0.6s">
@@ -186,11 +192,15 @@
 								<li>Scrolling Website</li>
 								<li>500 MB Shared Hosting </li>
 							</ul>
+							
 <form>
     <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G50gMvi4Bry5Lq"></script>
 </form>
-
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCentero">
+ Pay with Google Pay
+</button>
 						</div>
+						
 					</div>
 
 				</div>
@@ -198,7 +208,89 @@
 		</section>
 		<!-- end pricing -->
 
-		
+		<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCentero" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Basic Website</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<img src="images/gp/4000.jpeg" alt="" class="img-fluid">
+		<h4 class="text-center">
+			Send the screen shot with Your name to the given whtasapp number
+			<a target="_blank" href="https://web.whatsapp.com/send?phone=919142663866&amp;text=" class="img-icon-a nofocus">   
+9142663866
+        </a>
+		</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCentertwo" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Basic Website</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<img src="images/gp/2000.jpeg" alt="" class="img-fluid">
+		<h4 class="text-center">
+			Send the screen shot with Your name to the given whtasapp number
+			<a target="_blank" href="https://web.whatsapp.com/send?phone=919142663866&amp;text=" class="img-icon-a nofocus">   
+9142663866
+        </a>
+		</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenterthree" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Basic Website</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<img src="images/gp/6000.jpeg" alt="" class="img-fluid">
+		<h4 class="text-center">
+			Send the screen shot with Your name to the given whtasapp number
+			<a target="_blank" href="https://web.whatsapp.com/send?phone=919142663866&amp;text=" class="img-icon-a nofocus">   
+9142663866
+        </a>
+		</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Done</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
 		<!-- start contact -->
 		<section id="contact">
@@ -209,14 +301,14 @@
 							<h2 class="text-uppercase">Contact Us</h2>
 							<p> </p>
 							<address>
-								<p><i class="fa fa-map-marker"></i><a href="Oxygen.ml">Oxygen.ml</a></p>
+								<p><i class="fa fa-map-marker"></i><a href="https://oxygenweb.ml/">Oxygenweb.ml</a></p>
 								<p><i class="fa fa-phone"></i> <a href="tel:+919142663866">9142663866</a> </p>
 								<p><i class="fa fa-envelope-o"></i> <a href="mailto:joelthobias447@gmail.com">joelthobias447@gmail.com</a> </p>
 							</address>
 						</div>
 						<div class="col-md-6 wow fadeInUp" data-wow-delay="0.6s">
 							<div class="contact-form">
-								<form action="#" id="submit-form" method="post">
+								<form  id="submit-form" method="post">
 									<div class="col-md-6">
 										<input type="text" class="form-control" name="name" placeholder="Name">
 									</div>
@@ -227,7 +319,7 @@
 										<input type="text" class="form-control" name="subject" placeholder="Subject">
 									</div>
 									<div class="col-md-12">
-										<textarea class="form-control" placeholder="Message" name="Message" rows="4"></textarea>
+										<textarea class="form-control" placeholder="message" name="message" rows="4"></textarea>
 									</div>
 									<div class="col-md-8">
 										<input type="submit" class="form-control text-uppercase" value="Send">
@@ -240,7 +332,9 @@
 			</div>
 		</section>
 		<!-- end contact -->
-
+<script>
+$("#submit-form").validate();
+</script>
 		<!-- start footer -->
 		<footer>
 			<div class="container">
@@ -250,45 +344,52 @@
 			</div>
 		</footer>
 		<!-- end footer -->
-        
-		<script src="js/jquery.js"></script>
+        		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.singlePageNav.min.js"></script>
-		<script src="js/custom.js"></script>
-<script>
-    $(function () {
-        var header = $(".navbar-default");
-        $(window).scroll(function () {
-            var scroll = $(window).scrollTop();
+				<script src="js/custom.js"></script>
+				<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
-            if (scroll >= 155) {
-                header.removeClass('navbar-default nav ').addClass("navbar-s na current");
-            } else {
-                header.removeClass("navbar-s na current").addClass('navbar-default nav ');
-            }
-        });
-    });
-</script>
 <script>
-    $("#submit-form").submit((e) => {
-        e.preventDefault()
-        $.ajax({
-            url: "https://script.google.com/macros/s/AKfycbxnNebX_G95pbG8ElYCfD8uCsUAwU-mBZdB0xc6Hg/exec",
-            data: $("#submit-form").serialize(),
-            method: "post",
-            success: function (response) {
-                alert("Form submitted successfully")
-                window.location.reload()
-                // window.location.href="https://google.com"
-            },
-            error: function (err) {
-                alert("Something Error")
+$(document).ready(() => {
+    console.log('valid')
+    $("#submit-form").validate({
+		rules: {
+        name: "required",
+        email: {
+            required: true,
+            email: true
+        },
+        message: {
+            required: true,
+            minlength: 4
+		}
+	},
+	 onkeyup: false, //turn off auto validate whilst typing
+	submitHandler: a() 
 
-            }
-        })
+        
     })
+})
+function a(){
+	$("#submit-form").submit((e) => {
+    e.preventDefault()
+    $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbxnNebX_G95pbG8ElYCfD8uCsUAwU-mBZdB0xc6Hg/exec",
+        data: $("#submit-form").serialize(),
+        method: "post",
+        success: function (response) {
+            alert("Form submitted successfully")
+            window.location.reload()
+            // window.location.href="https://google.com"
+        },
+        error: function (err) {
+            alert("Something Error")
+        }
+    })
+})
+}
 </script>
-
 	</body>
 </html>

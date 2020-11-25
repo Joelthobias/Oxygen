@@ -523,6 +523,7 @@ background: url(https://images.pexels.com/photos/4831/hands-coffee-smartphone-te
         background: #28a7e9;
         color: #fff;
         font-weight: bold;
+        box-shadow:none;
         transition: all 0.3s ease;
     }
 #contact input[type="submit"]:hover {
