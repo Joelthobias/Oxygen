@@ -19,7 +19,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+>
 		<!-- custom css -->
 		<link rel="stylesheet" href="css/templatemo-style.css">
 
@@ -392,39 +392,6 @@ Scan to Pay
 })
 
 </script>
-<!-- <script>
-	$(document).ready(function(){
-		$('#submit-form').validate({
-			rules:{
-				name:{
-					required:true,
-					minlength:4
-				},
-				email:{
-					required:true,
-					email:true
-				}
-			},
-			submitHandler: function(form) {
-				$("#submit-form").submit((e) => {
-					e.preventDefault()
-					$.ajax({
-						url: "https://script.google.com/macros/s/AKfycbxnNebX_G95pbG8ElYCfD8uCsUAwU-mBZdB0xc6Hg/exec",
-						data: $("#submit-form").serialize(),
-						method: "post",
-						success: function (response) {
-							alert("Form submitted successfully")
-							window.location.reload()
-							// window.location.href="https://google.com"
-						},
-						error: function (err) {
-							alert("Something Error")
-						}
-					})
-				})
-    		}
-		})
-	})
-</script> -->
+
 	</body>
 </html>
