@@ -147,7 +147,7 @@
     <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G50UDHySrT15UP"></script>
 </form>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCentertwo">
- Pay with Google Pay
+Scan to Pay
 </button>
 							
 						</div>
@@ -172,7 +172,7 @@
     <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G50j3ljqnFPpkT"></script>
 </form>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenterthree">
- Pay with Google Pay
+Scan to Pay
 </button>
 						</div>
 					</div>
@@ -197,7 +197,7 @@
     <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_G50gMvi4Bry5Lq"></script>
 </form>
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCentero">
- Pay with Google Pay
+Scan to Pay
 </button>
 						</div>
 						
@@ -310,13 +310,13 @@
 							<div class="contact-form">
 								<form  id="submit-form" method="post">
 									<div class="col-md-6">
-										<input type="text" class="form-control" name="name" placeholder="Name">
+										<input type="text" class="form-control" name="name" required placeholder="Name">
 									</div>
 									<div class="col-md-6">
 										<input type="email" class="form-control" name="email" placeholder="Email">
 									</div>
 									<div class="col-md-12">
-										<input type="text" class="form-control" name="subject" placeholder="Subject">
+										<input type="text" class="form-control" name="subject" required placeholder="Subject">
 									</div>
 									<div class="col-md-12">
 										<textarea class="form-control" placeholder="message" name="message" rows="4"></textarea>
@@ -332,9 +332,7 @@
 			</div>
 		</section>
 		<!-- end contact -->
-<script>
-$("#submit-form").validate();
-</script>
+
 		<!-- start footer -->
 		<footer>
 			<div class="container">
@@ -348,33 +346,34 @@ $("#submit-form").validate();
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.singlePageNav.min.js"></script>
-				<script src="js/custom.js"></script>
-				<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 
-<script>
-$(document).ready(() => {
-    console.log('valid')
-    $("#submit-form").validate({
-		rules: {
-        name: "required",
-        email: {
-            required: true,
-            email: true
-        },
-        message: {
-            required: true,
+		<script>
+		$("#submit-form").validate({
+
+		rules:{
+            name:{
+                required:true,
+                minlength:4
+            },
+            email:{
+                required:true,
+                email: true
+            },
+            message: {
+            required:true,
             minlength: 4
-		}
-	},
-	 onkeyup: false, //turn off auto validate whilst typing
-	submitHandler: a() 
-
-        
+		    }
+        }
     })
-})
-function a(){
+		</script>
+<script>
+	
+
 	$("#submit-form").submit((e) => {
-    e.preventDefault()
+	e.preventDefault()
+	if($("#submit-form").valid()){
     $.ajax({
         url: "https://script.google.com/macros/s/AKfycbxnNebX_G95pbG8ElYCfD8uCsUAwU-mBZdB0xc6Hg/exec",
         data: $("#submit-form").serialize(),
@@ -388,8 +387,44 @@ function a(){
             alert("Something Error")
         }
     })
+	}
+
 })
-}
+
 </script>
+<!-- <script>
+	$(document).ready(function(){
+		$('#submit-form').validate({
+			rules:{
+				name:{
+					required:true,
+					minlength:4
+				},
+				email:{
+					required:true,
+					email:true
+				}
+			},
+			submitHandler: function(form) {
+				$("#submit-form").submit((e) => {
+					e.preventDefault()
+					$.ajax({
+						url: "https://script.google.com/macros/s/AKfycbxnNebX_G95pbG8ElYCfD8uCsUAwU-mBZdB0xc6Hg/exec",
+						data: $("#submit-form").serialize(),
+						method: "post",
+						success: function (response) {
+							alert("Form submitted successfully")
+							window.location.reload()
+							// window.location.href="https://google.com"
+						},
+						error: function (err) {
+							alert("Something Error")
+						}
+					})
+				})
+    		}
+		})
+	})
+</script> -->
 	</body>
 </html>
