@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    
+    <p>
+        <b>
+            <center>
+                <span id="i"></span>
+                wishes you happy christmass
+            </center>
+        </b>
+        
+    </p>
+    <input required type="text" name="name" id="name"> 
+    <button onclick="joel()">click here</button>
+    <a href="" id="aa">hi</a>
+        <script>
+            var url_string = window.location.href;
+            var url = new URL(url_string);
+            var a = url.searchParams.get('name');
+            if (a){
+                 document.getElementById('i').innerHTML=a
+                
+            }
+            
+
+    </script>
+    <script>
+        function joel(){
+
+        let a=document.getElementById('name').value
+        if(a){
+document.getElementById('hi').innerHTML = a + ' wishes you happy christmass';
+
+document.getElementById('aa').href = '/mnt/6C354AC378A0E9F3/myprojects/MERRY /a.html/?name=' + a;
+
+        }
+
+}
+        
+    </script>
+    <p>
+        <b>
+            <center>
+                <span id="hi"></span>
+                
+            </center>
+        </b>
+        
+    </p>
+</body>
+</html>
