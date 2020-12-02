@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    </head>
-    <body>
+</head>
+<body>
 
-
-        <p>
-            <b>
-                <center>
-                    <span id="i"></span>
-                    wishes you happy christmass
-                </center>
-            </b>
-
-        </p>
-        <input required type="text" name="name" id="name">
-        <button onclick="joel()">click here</button>
-        <a href="" id="aa">hi</a>
+    
+    <p>
+        <b>
+            <center>
+                <span id="i"></span>
+                wishes you happy christmass
+            </center>
+        </b>
+        
+    </p>
+    <input required type="text" name="name" id="name"> 
+    <button onclick="joel()">click here</button>
+    <a href="" id="aa">hi</a>
         <script>
-            function parse_query_string(query) {
-                var vars = query.split("&");
-                var query_string = {};
-                for (var i = 0; i < vars.length; i++) {
-                    var pair = vars[i].split("=");
-                    var key = decodeURIComponent(pair[0]);
-                    var value = decodeURIComponent(pair[1]);
-                    // If first entry with this name
-                    if (typeof query_string[key] === "undefined") {
-                        query_string[key] = decodeURIComponent(value);
-                        // If second entry with this name
-                    } else if (typeof query_string[key] === "string") {
-                        var arr = [query_string[key], decodeURIComponent(value)];
-                        query_string[key] = arr;
-                        // If third or later entry with this name
-                    } else {
-                        query_string[key].push(decodeURIComponent(value));
-                    }
-                }
-                return query_string;
-            }
+function parse_query_string(query) {
+    var vars = query.split("&");
+    var query_string = {};
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        var key = decodeURIComponent(pair[0]);
+        var value = decodeURIComponent(pair[1]);
+        // If first entry with this name
+        if (typeof query_string[key] === "undefined") {
+            query_string[key] = decodeURIComponent(value);
+            // If second entry with this name
+        } else if (typeof query_string[key] === "string") {
+            var arr = [query_string[key], decodeURIComponent(value)];
+            query_string[key] = arr;
+            // If third or later entry with this name
+        } else {
+            query_string[key].push(decodeURIComponent(value));
+        }
+    }
+    return query_string;
+}
 
-            var query_string = window.location.search.substring(1);
-            var parsed_qs = parse_query_string(query_string);
-            var a = parsed_qs.name;
+var query_string = window.location.search.substring(1);
+var parsed_qs = parse_query_string(query_string);
+var a = parsed_qs.name;
 
 
             // var url_string = window.location.search.substring(1);
             // console.log(url_string);
             // var qs=parse_
-            // var url = new URL(url_string);
+                        // var url = new URL(url_string);
             // var a = url.searchParams.get('name');
-            if (a) {
-                document.getElementById('i').innerHTML = a
-
+            if (a){
+                 document.getElementById('i').innerHTML=a
+                
             }
-        </script>
-        <script>
-            function joel() {
+            
 
-                let a = document.getElementById('name').value
-                if (a) {
-                    document.getElementById('hi').innerHTML = a + ' wishes you happy christmass';
+    </script>
+    <script>
+        function joel(){
 
-                    document.getElementById('aa').href = '/mnt/6C354AC378A0E9F3/myprojects/oxygen/a.html/?name=' + a;
+        let a=document.getElementById('name').value
+        if(a){
+document.getElementById('hi').innerHTML = a + ' wishes you happy christmass';
 
-                }
+document.getElementById('aa').href = '/mnt/6C354AC378A0E9F3/myprojects/oxygen/a.html/?name=' + a;
 
-            }
-        </script>
-        <p>
-            <b>
-                <center>
-                    <span id="hi"></span>
+        }
 
-                </center>
-            </b>
-
-        </p>
-    </body>
+}
+        
+    </script>
+    <p>
+        <b>
+            <center>
+                <span id="hi"></span>
+                
+            </center>
+        </b>
+        
+    </p>
+</body>
 </html>
