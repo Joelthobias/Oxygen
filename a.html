@@ -20,7 +20,7 @@
         </p>
         <input required type="text" name="name" id="name">
         <button onclick="joel()">click here</button>
-        <a href="" id="aa">hi</a>
+        <a href=" " style="display: none;" id="aa">Share now</a>
         <script>
             function parse_query_string(query) {
                 var vars = query.split("&");
@@ -65,7 +65,7 @@
                 let an = document.getElementById('name').value
                 if (an) {
                     document.getElementById('hi').innerHTML = an + ' wishes you happy christmass';
-
+                    document.getElementById('aa').style.display='block';
                     document.getElementById('aa').href = 'https://wa.me/?text=Hi '+an+' sends you a link https://joelthobias.github.io/Oxygen/a.html?name=' + an;
 
                 }
