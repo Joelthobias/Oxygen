@@ -492,6 +492,11 @@ a:hover {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
+@media(max-width:786px){
+    .mb-sm-5{
+        margin-top: 5em;
+    }
+}
 
 .containers:hover .image {
     opacity: 0.3;
@@ -502,7 +507,7 @@ a:hover {
 }
 
 .text {
-    background-color: #000;
+    background-color: #00000040;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
