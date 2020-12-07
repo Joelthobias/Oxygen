@@ -293,7 +293,7 @@ a {
     {
     background-size: cover;
 background-repeat: no-repeat;
-background-image: url('https://anliloproducts.com/wp-content/uploads/2020/10/pexels-fauxels-3183181-scaled-1.jpg');
+background-image: url('../images/home.jpg');
   background-attachment: fixed;
         /* padding-top: 90px; */ 
     color: #fff;
@@ -461,7 +461,7 @@ a:hover {
 
 /* start contact */
 #contact {
-    background: url('https://images.pexels.com/photos/4831/hands-coffee-smartphone-technology.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat;
+    background: url('../images/contact.webp') no-repeat;
     background-size: cover;
     color: #fff !important;
     background-position: center center;
