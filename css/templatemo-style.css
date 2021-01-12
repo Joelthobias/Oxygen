@@ -304,6 +304,14 @@ background-image: url('../images/home.jpg');
 .row_1{
 padding-top: 20em;
 }
+/* #hide{
+    display: none;
+    transition-delay: 8s;
+}
+.pricing-title:hover + #hide{
+    display: block;
+    transition-delay: 8s;
+} */
 #home p
     {
         font-weight: 400;
