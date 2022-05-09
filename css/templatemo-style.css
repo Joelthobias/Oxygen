@@ -1,10 +1,18 @@
 
+@media(min-width:992px){
 
+}
 .container {
 	/* padding-right: 15px; */
 	padding-left: 15px;
 	/* margin-right: auto; */
 	margin-left: auto;
+}
+.mt-5{
+    margin-top: 2em;
+}
+.mt-6{
+    margin-top: 4em;
 }
 body
     {
@@ -85,6 +93,9 @@ background-repeat: no-repeat;
   .container {
     width: 900px;
   }
+    .jjct{
+        height: 600px;
+    }
 }
 @media (min-width: 1200px) {
   .container {
